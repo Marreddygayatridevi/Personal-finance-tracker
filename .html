@@ -1,0 +1,49 @@
+<html>
+    <title>
+     Finance Tracker
+    </title>
+    <link rel="stylesheet" href=".css">
+    <body>
+<h1><b>Personal Finance Tracker</b></h1>
+<div id="form">
+    <h2>Add Expenses</h2>
+    <label for="amount">Amount :</label>
+    <input type="number" id="amount" placeholder="Enter amount"><br><br>
+    <label for="category">Category :</label>
+            <select id="category" name="category" required>
+                <option value="select">Select category of Bills  </option>
+                <option value="groceries">Groceries</option>
+                <option value="rent">Rent</option>
+                <option value="bills">bills</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select><br><br>
+    <label for="date">Date :</label>
+    <input type="date" id="date" name="date" required><br><br>
+    <label for="currency">Currency:</label>
+            <select id="currency" name="currency" required>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option> 
+                <option value="IND">IND</option>
+                <option value="GBP">GBP</option>
+            </select><br><br>
+    <label for="convert">Convert to Base Currency (USD):</label>
+    <input type="checkbox" id="convert" name="convert" required><br><br>
+        <div id="button-container">
+            <button type="submit">Add Expense</button>
+        </div>
+        <div id="summary">
+            <h2>Summary</h2>
+            <canvas id="expenseChart"></canvas>
+            <ul id="transactions"></ul>
+        </div>
+
+
+</form>
+<script src=".js"></script>
+
+</div>
+
+    </body>
+</html>
+
